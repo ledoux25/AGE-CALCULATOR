@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400;1,800;1,900&display=swap");
+::after ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  position: relative;
+  background-color: white;
+  width: 40%;
+  border-radius: 20px 20px 100px 20px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 480px;
+  max-width: 500px;
+}
+main form {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+main form .field {
+  display: flex;
+  flex-direction: column;
+  width: 21%;
+  margin-right: 25px;
+}
+main form .field label {
+  font-size: 12px;
+  color: hsla(0, 1%, 44%, 0.917);
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+main form .field input {
+  font-size: 29px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+main form .field input:focus, main form .field input:hover {
+  border: 1.5px solid hsl(259, 100%, 65%);
+  outline: none;
+  cursor: pointer;
+}
+main form .field .error-text {
+  color: red;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 9px;
+  margin-top: 3px;
+  display: none;
+}
+main form .field .error-input {
+  border: 1.4px solid red;
+}
+main form .field ::-moz-placeholder {
+  color: hsla(0, 1%, 44%, 0.917);
+}
+main form .field ::placeholder {
+  color: hsla(0, 1%, 44%, 0.917);
+}
+main .divider {
+  display: flex;
+  align-items: center;
+}
+main .divider .line {
+  width: 85%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+}
+main .divider img {
+  background-color: hsl(259, 100%, 65%);
+  padding: 12px;
+  border-radius: 50px;
+}
+main .divider img:hover {
+  background-color: black;
+  cursor: pointer;
+}
+main .result h1 {
+  margin: 0;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 70px;
+  line-height: 75px;
+}
+main .result h1 span {
+  color: hsl(259, 100%, 65%);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    min-width: 300px;
+  }
+  main .divider {
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  main .divider .line {
+    position: absolute;
+    width: 85%;
+  }
+  main .divider img {
+    z-index: 1;
+    transform: scale(0.8);
+  }
+  main form {
+    align-items: center;
+    justify-content: space-between;
+  }
+  main form .field {
+    position: relative;
+    width: 30%;
+    font-size: 2px;
+    margin-right: 15px;
+  }
+  main form .field input {
+    font-size: 25px;
+  }
+  main .result h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    min-width: 250px;
+  }
+  main form {
+    align-items: center;
+    justify-content: space-between;
+  }
+  main form .field {
+    position: relative;
+    width: 30%;
+    font-size: 2px;
+    margin-right: 15px;
+  }
+  main form .field input {
+    font-size: 20px;
+  }
+  main .result h1 {
+    font-size: 45px;
+  }
+}/*# sourceMappingURL=style.css.map */
